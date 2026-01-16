@@ -87,9 +87,8 @@
     --border: 217 33% 20%;
   }
 
-  * padding {
+  * {
     @apply border-border;
-
   }
 
   html {
@@ -140,12 +139,10 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:scale-105 active:scale-95;
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+         hover:scale-105 active:scale-95;
 }
-
-.cosmic-button:hover {
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
-} 
 
 @utility star {
   @apply absolute rounded-full bg-white;
@@ -163,5 +160,3 @@
   padding: 0;
   text-align: center;
 }
-
-
